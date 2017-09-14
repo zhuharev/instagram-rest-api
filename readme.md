@@ -1,3 +1,23 @@
+## installation
+
+`docker pull zhuharev/insta:latest`
+
+## usage
+
+create `docker-compose.yml` file with content:
+
+```yml
+version: '3'
+services:
+  web:
+      image: zhuharev/insta:latest
+      ports:
+          - "8080:80"
+
+```
+
+Then run `docker-compose up` and open http://127.0.0.1:8080/instagram/timeline/index.html
+
 ## endpoints
 
 Currently support upload single and multiple photos
